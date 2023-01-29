@@ -1,0 +1,20 @@
+<div class="home-container">
+  <h1>My Latest Project</h1>
+  <p class="heading">
+    There are many variations of passages of Lorem Ipsum available, but the
+    majority have suffered alteration.
+  </p>
+  <div class="container">
+    <div class="box" *ngFor="let items of cardItems">
+      <img [src]="items.img" alt="proj1" />
+      <div class="element">
+        <h2>{{ items.title }}</h2>
+        <p class="desc">{{ items.desc }}</p>
+        <button class="view">view</button>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="text-center">
+    <button class="text-center">View More</button>
+  </a>
+</div>
