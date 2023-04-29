@@ -1,69 +1,42 @@
-<div class="container">
-  <ul class="navbar">
-    <div class="logo">
-      <a href="home" class="home">
-        <img src="/assets/images/logo.png" alt="" />
-      </a>
+<div class="my-container">
+    <div class="hero-mask">
+      <img src="/assets/images/developer.jpg" alt="my-image" />
     </div>
-    <nav>
-      <li>
-        <a
-        routerLink=""
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="home"
-          >Home</a
-        >
-      </li>
-      <li>
-        <a  
-        routerLink="about-me"
-        routerLinkActive="active" class="about"
-          >About Me</a
-        >
-      </li>
-      <li>
-        <a 
-        routerLink="contact-me"
-        routerLinkActive="active" class="contactMe"
-       
-          >Contact Me</a
-        >
-      </li>
-    </nav>
-  </ul>
-  <div class="row">
-    <div class="col-1">
-      <h2>Aimen Azim</h2>
-      <h3>Front-End Developer</h3>
-      <h4>Angular | React</h4>
-      <a href="about-me" class="about">
-        <button>
-          About Me
-          <img src="/assets/images/arrow.png" />
+ 
+  <div class="mini-container">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#header">Aimen <span>.</span></a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </a>
-    </div>
-    <div class="col-2">
-      <img src="/assets/images/img5.png" alt="my pic" class="mypic" />
-      <div class="color-box"></div>
+     
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link " aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact-me">Contact-me</a>
+            <a class="nav-link" href="#work">Work</a>
+          </div>
+        </div> -->
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " aria-current="page" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact-me">Contact-me</a>
+          <a class="nav-link" href="#work">Work</a>
+          <a class="nav-link" href="#hobby">What I Do</a>
+
+        </div>
+      </div>
+
+    </nav>
+    <div class="type-container">
+      <p>Welcome</p>
+      <h2 class="typed">I'm a Front-End Developer</h2>
+      <p>based in Karachi, Pakistan</p>
+      <a href="#about" class="about"> <button>About Me</button> </a>
     </div>
   </div>
-  <!-- <div class="social-links">
-    <a href="https://twitter.com/AzimAimen" target="_blank" rel="noopener noreferrer" class="te">
-    <img src="/assets/images/tw.png" alt="twiter logo" />
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=100027417578813" target="_blank" rel="noopener noreferrer" class="fb">
-    <img src="/assets/images/fb.png" alt="facebook logo" />
-    </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" class="ig">
-    <img src="/assets/images/ig.png" alt="instagram logo" />
-    </a>
-    <a href="https://www.linkedin.com/in/aimen-azim-9058391a5/" target="_blank" rel="noopener noreferrer" class="li">
-    <img src="/assets/images/li.png" alt="linkedIn logo" />
-    </a>
-    <a href="https://www.youtube.com/channel/UCeKDzQ9v8fRif1YWBd_M_zA" target="_blank" rel="noopener noreferrer" class="yt">  
-    <img src="/assets/images/yt.png" alt="youtube logo" />
-    </a>
-  </div> -->
 </div>

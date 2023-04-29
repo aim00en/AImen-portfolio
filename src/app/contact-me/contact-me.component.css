@@ -1,45 +1,75 @@
-.container {
-  background-color: rgb(230, 216, 241);
-  /* margin-bottom: 50px;
-  margin-left: 20px;
-  margin-right: 8px; */
-    padding: 0 1em;
-    padding-top: 100px;
+.my-container {
+  /* padding: 0 1em; */
+  font-family: "Poppins, sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+.main-div {
+  display: flex !important;
+  position: relative !important;
+  text-align: center !important;
+  margin-bottom: 3rem !important;
+}
+h1 {
+  font-size: calc(1.95rem + 8.4vw) !important;
+  text-transform: uppercase !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  color: rgba(110, 107, 107, 0.214);
+  opacity: 0.4;
+}
+h2 {
+  font-weight: 600 !important;
+  font-size: 2.25rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0 !important;
+  align-self: center !important;
+  width: 100% !important;
+  position: absolute !important;
+  color: #121212;
 }
 .row {
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 100px;
+  padding-bottom: 5em;
 }
 .col-1 {
-  width: 650px;
-  /* margin-left: 20px; */
-
+  width: 50%;
+  padding: 2em;
+  line-height: 3em;
 }
-h2 {
-  font-size: 64px;
-  color: rgba(0, 0, 0, 0.628);
-  margin-bottom: 20px;
+.col-2 {
+  width: 40%;
+  padding: 1em;
+  height: 700px;
+}
+h3 {
+  font-family: "Poppins, sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.789);
+  /* margin-bottom: 20px; */
 }
 p {
-  color: rgba(0, 0, 0, 0.467);
-  font-size: 24px;
-  line-height: 1.3em;
-}
-form {
-  max-width: 100%;
+  color: rgba(0, 0, 0, 0.761);
+  font-size: 1.1rem;
+  line-height: 1.75em;
+  font-family: "Poppins, sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 input[type="text"] {
   color: rgba(0, 0, 0, 0.467);
   font-size: 20px;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0 8px 0;
+  padding: 1.5em;
+  /* margin: 8px 0 8px 0; */
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.467);
-  border-radius: 4px;
+  border: none;
+  background-color: rgb(234, 231, 231);
+  border-radius: 0.75em;
+  font-family: "Poppins, sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 textarea {
   width: 100%;
@@ -47,44 +77,71 @@ textarea {
   font-size: 20px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.467);
+  border: none;
   color: rgba(0, 0, 0, 0.467);
-  border-radius: 4px;
-  background-color: #f8f8f8;
+  border-radius: 0.75em;
+  background-color: rgb(234, 231, 231);
   resize: none;
+  font-family: "Poppins, sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 input[type="submit"] {
-  background: transparent;
-  border: 2px solid rgba(137, 43, 226, 0.659);
-  width: 150px;
-  color: blueviolet;
-  padding: 12px 10px;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: #20c997;
+  border: none;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1em 2.5em;
+  transition: all 0.5s ease;
+  border-radius: 1.5em;
   cursor: pointer;
-  display: inline-block;
+  font-family: "Poppins, sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 .text-center {
   text-align: center !important;
 }
 input[type="submit"]:hover {
-  background-color: rgba(137, 43, 226, 0.715);
-  color: white;
-  outline: none;
-  border: 0;
+  background-color: #329779;
   transition: 0.5s;
-  transform: translateY(-7px);
 }
-.col-2{
-  width: 700px;
-  height:700px;
+.container {
+  justify-content: center;
+  align-items: center;
 }
-.col-2 img {
-  max-width: 100%;
-  height: 100%;
-  /* margin-left: 30px; */
-  border-radius: 5px;
+.link-container {
+  display: flex;
+}
+.social-links img {
+  height: 20px;
+  margin-right: 1em;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.social-links {
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.789);
+  margin-top: 1em;
+  font-family: "Poppins, sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+.icon {
+  color: #20c997;
+  padding-right: 4px;
+}
+@media screen and (max-width: 700px) {
+  .col-1 {
+    width: 100%;
+    padding: 0 4em;
+    margin-bottom: 2em;
+  }
+  .col-2 {
+    width: 100%;
+    padding: 0 4em;
+  }
 }
